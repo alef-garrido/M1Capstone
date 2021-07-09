@@ -339,6 +339,10 @@ nav {
   width: 95%;
   padding-bottom: 1rem;
 }
+#partContainer img {
+  width: 50%;
+  padding: 1rem;
+}
 
 footer {
   background-color: #f5f5f5;
@@ -356,4 +360,33 @@ footer p {
   font-size: 12px;
   color: #272a31;
   font-weight: 300;
+}
+
+/* About Page */
+
+#menuMobile-abt {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-image: url("/Ellipse-color-lines.2f8b30f7.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 36% 57%;
+}
+#menuMobile-abt img {
+  padding: 1rem 0 0 2rem;
+}
+#partnersAbt {
+  width: 100%;
+  background-color: #272a31;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#partnersAbt h2 {
+  font-size: 18px;
+  color: #d3d3d3;
+  text-align: center;
 }
