@@ -137,7 +137,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 1rem 1rem 4rem 1rem;
-  background-image: url("/Ellipse-color-pattern.7a54feae.png"), url("/deco-0-icon.61bf9602.png"), url("/x-gray-icon.d8f75196.svg"), url("/deco-dollar-icon.a6f784a6.png");
+  background-image: 
+    url("/assets/png/Ellipse-color-pattern.png"), 
+    url("/assets/png/deco-0-icon.png"), 
+    url("/assets/svg/x-gray-icon.svg"), 
+    url("/assets/png/deco-dollar-icon.png");
   background-repeat: no-repeat;
   background-size: 20%, 5%, auto, auto;
   background-position: 98% 39%, 13% 37%, 16% 98%, 89% 91%;
@@ -178,4 +182,72 @@ nav {
   padding: 1rem;
   background-color: #f1f1f1;
   border: 1px solid white;
+}
+
+#mainProgram {
+  background-image: url("/mobile-background.3975aafc.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainProgram h2 {
+  color: #d3d3d3;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.deco {
+  width: 27px;
+  border: 1px solid #ec5242;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  padding: 2rem 0;
+}
+
+#actContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+#actContainer li {
+  margin: 0.5rem;
+  color: #d3d3d3;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: rgba(62, 66, 73, 0.6);
+  display: grid;
+  grid-template-columns: 20% 25% 55%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+#actContainer li h4 {
+  font-size: 16px;
+  color: #ec5242;
+}
+
+#mainSBtn {
+  background: #ec5242;
+  color: #d3d3d3;
+  width: 80%;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border: none;
+}
+
+#featSpeakers {
+  background-color: #f5f2f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#featSpeakers h2 {
+  color: #272a31;
+  text-align: center;
+  margin-top: 2rem;
 }
