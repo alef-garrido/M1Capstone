@@ -508,3 +508,275 @@ footer p {
   color: #d3d3d3;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menuMobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    padding: 3rem 4rem 2rem 4rem;
+    box-shadow: 0 -1px 6px 2px rgba(0, 0, 0, 0.25);
+  }
+  nav img {
+    width: 130px;
+    height: auto;
+  }
+  nav a {
+    text-decoration: none;
+    color: #272a31;
+    margin: 0 1rem;
+  }
+  nav .logoNav {
+    width: 35%;
+  }
+  nav button {
+    width: 15%;
+    padding: 0.5rem 1rem;
+    border: 4px solid #ec5242;
+    background-color: #f5f5f5;
+    margin: 0 1rem 1rem 1rem;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  nav button:hover {
+    background-color: #ec5242;
+    border: 2px solid white;
+    color: white;
+  }
+
+  #socialBar {
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #socialBar .social-icons {
+    width: 100%;
+    padding-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #socialBar .social-icons img {
+    margin: 0 1rem;
+    width: auto;
+    height: 25%;
+    cursor: pointer;
+  }
+  #socialBar .social-icons a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+
+  #heroSection {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 7rem;
+    background-image: url("/Ellipse-color-pattern.7a54feae.png"), url("/deco-0-icon.61bf9602.png"), url("/deco-yen-icon.f9f9f204.png"), url("/deco-0-icon.61bf9602.png"), url("/square-B&W.f9ae7b45.png"), url("/deco-c-icon.2559dee0.png");
+    background-repeat: no-repeat;
+    background-size: 9%, 2%, auto, 2%, 6%, 3%;
+    background-position: 60% 70%, 13% 41%, 5% 98%, 99% 47%, 93% 72%, 75% 93%;
+  }
+
+  #backgroundDesk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    padding-top: 9rem;
+    background-image: url("/desk-header.8656523e.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #backgroundDesk .hero-content {
+    width: 75%;
+    padding-left: 20%;
+  }
+  #backgroundDesk .hero-content h3 {
+    font-size: 45px;
+    align-self: flex-start;
+  }
+  #backgroundDesk .hero-content h2 {
+    align-self: flex-start;
+    font-size: 40px;
+  }
+
+  #sumContainer {
+    width: 70%;
+    font-size: 1rem;
+    border: 2px solid white;
+    font-size: 14px;
+  }
+
+  #actContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0 10rem 4rem 10rem;
+  }
+  #actContainer li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #featSpeakers {
+    padding: 2rem 4rem;
+  }
+
+  #featContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .featCard {
+    width: 40vw;
+  }
+  .featCard h4 {
+    font-size: 19px;
+  }
+  .featCard h5 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .featCard p {
+    font-size: 15px;
+    padding-top: 30px;
+    margin-top: 5%;
+  }
+
+  #partners {
+    padding: 2rem 5rem;
+  }
+  #partContainer {
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+  #partContainer img {
+    width: 20%;
+  }
+  #partnersAbt {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+  }
+  footer div {
+    width: 25%;
+    padding: 3rem 3rem 2rem 2rem;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  #menuMobile-abt {
+    display: none;
+  }
+  #aboutMain {
+    padding-top: 7rem;
+    background-image: url("/Ellipse-black-lines.0946821b.png"), url("/Ellipse-color-pattern.7a54feae.png"), url("/elipse-B&W.6be8c489.png"), url("/elipse-B&W.6be8c489.png"), url("/Ellipse-color-lines.2f8b30f7.png");
+    background-size: 6%, auto, 9%, 7%, 4%;
+    background-position: 89% 3%, 20% 14%, 98% 16%, 2% 8%, 16% 2%;
+  }
+  #aboutMain h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 4rem;
+  }
+  .title {
+    display: none;
+  }
+  #abtSummary {
+    width: 55%;
+    margin-bottom: 4rem;
+    padding: 2rem 4rem;
+  }
+  .contact {
+    width: 50%;
+    font-size: 16px;
+    padding-bottom: 8rem;
+  }
+  #aboutLogo {
+    width: 98%;
+    padding-top: 7rem;
+  }
+  #aboutLogo h4 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  #aboutLogo p {
+    width: 50%;
+  }
+  #aboutLogo img {
+    width: 40%;
+    height: auto;
+    padding: 3rem 4rem;
+    margin-top: 2rem;
+  }
+  #pastEvents {
+    padding-bottom: 7rem;
+  }
+  #pastEvents h5 {
+    font-size: 30px;
+  }
+  #pastEvents p {
+    font-size: 14px;
+    padding-bottom: 5rem;
+  }
+  #pastEvents div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  #pastEvents img {
+    margin: 0 1rem;
+  }
+  #pastEvents img:nth-child(even) {
+    margin-bottom: 0;
+  }
+  .deskShow {
+    display: block;
+  }
+  .deskNone {
+    display: none;
+  }
+  .footerAbt {
+    width: 100%;
+    background-color: #272a31;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerAbt p {
+    color: #d3d3d3;
+  }
+  
+}
