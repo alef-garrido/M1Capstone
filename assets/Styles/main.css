@@ -895,8 +895,6 @@ footer div {
 
   #pastEvents div {
     display: flex;
-    align-items: center;
-    justify-items: center;
   }
 
   #pastEvents img:nth-child(even) {
