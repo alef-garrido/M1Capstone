@@ -232,6 +232,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
+  justify-items: center;
 }
 #actContainer li h4 {
   font-size: 16px;
@@ -271,7 +272,7 @@ main {
   display: grid;
   gap: 10px;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 10% 10% 80%;
+  grid-template-rows: 10% 17% 73%;
 }
 .featCard img {
   grid-column: 1/2;
@@ -657,6 +658,7 @@ footer p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    justify-items: center;
   }
 
   #featSpeakers {
