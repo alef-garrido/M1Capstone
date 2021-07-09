@@ -486,6 +486,14 @@ footer p {
 #pastEvents img:nth-child(even) {
   margin-bottom: 2rem;
 }
+
+.past-event {
+  align-self: center;
+}
+
+.deskShow {
+  display: none;
+}
 #partnersAbt {
   width: 100%;
   background-color: #272a31;
