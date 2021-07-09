@@ -79,7 +79,7 @@ select {
 
 body {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-color: #f5f5f5;
   font-family: sans-serif;
 }
@@ -126,10 +126,15 @@ body {
   font-style: normal;
 }
 nav {
+  width: 100%;
   display: none;
 }
 #socialBar {
   display: none;
+}
+main {
+  width: 100%;
+  height: auto;
 }
 #heroSection {
   width: 100%;
@@ -185,10 +190,12 @@ nav {
 }
 
 #mainProgram {
-  background-image: url("/assets/svg/mobile-background.svg");
+  background-image: url(/assets/svg/mobile-background.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
+  width: 100%;
 }
 #mainProgram h2 {
   color: #d3d3d3;
@@ -345,6 +352,8 @@ nav {
 }
 
 footer {
+  width: 100%;
+  height: auto;
   background-color: #f5f5f5;
   padding: 2rem;
   display: grid;
@@ -693,7 +702,6 @@ footer p {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 4rem;
   }
   footer div {
     width: 25%;

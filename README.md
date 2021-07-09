@@ -30,7 +30,7 @@ Learning Objectives:
 
 ## Live Demo
 
-[Live Demo Link](...)
+[Live Demo Link](https://alef-garrido.github.io/M1Capstone/)
 
 ## Author
 
