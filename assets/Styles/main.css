@@ -122,7 +122,7 @@ select {
 
 .featCard img {
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 1/4;
 }
 
 #menuMobile img {
@@ -220,7 +220,7 @@ footer p {
 .featCard p {
   grid-column: 2/3;
   grid-row: 3/4;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #heroSection p {
@@ -261,6 +261,14 @@ footer p {
   margin-bottom: 2rem;
 }
 
+.deco-sub {
+  width: 27px;
+  border: 1px solid var(--primary-black);
+  margin-bottom: 2rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
 .sectionTitle {
   padding: 2rem 0;
 }
@@ -291,7 +299,7 @@ footer p {
 .featCard h4 {
   grid-column: 2/3;
   grid-row: 1/2;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--primary-black);
   margin-block-start: 0;
   margin-block-end: 0;
@@ -348,12 +356,13 @@ footer p {
   gap: 10px;
   grid-template-columns: 40% 60%;
   grid-template-rows: 10% 17% 73%;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .featCard h5 {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--primary-red);
   font-weight: normal;
 }

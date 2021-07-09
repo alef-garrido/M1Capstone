@@ -56,15 +56,15 @@ const artistInfo = [
     id: 7,
     thumbnail: './assets/png/Avatar7.png',
     title: 'Dua Saleh',
-    subTitle: 'Sudanese-American recording artist, songwriter, poet, and actor based in Minneapolis, Minnesota.',
+    subTitle: 'Sudanese-American recording artist, songwriter.',
     info: '<br>Their debut EP Nūr was released in January 2019 by the Against Giants record label to critical acclaim, with their second, Rosetta, released in June the following year.',
   },
   {
     id: 8,
     thumbnail: './assets/png/Avatar8.png',
     title: 'Arcade Fire',
-    subTitle: 'Canadian indie rock band, consisting of husband and wife Win Butler and Régine Chassagne.',
-    info: '<br>Founded in 2000 by friends and classmates Butler and Josh Deu, the band came to prominence in 2004 with the release of their critically acclaimed debut album Funeral.',
+    subTitle: 'Canadian indie rock band.',
+    info: 'Founded in 2000 by friends and classmates Butler and Josh Deu, the band came to prominence in 2004 with the release of their critically acclaimed debut album Funeral.',
   },
 ];
 
