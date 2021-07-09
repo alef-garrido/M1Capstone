@@ -271,7 +271,7 @@ main {
   display: grid;
   gap: 10px;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 10% 20% 70%;
+  grid-template-rows: 10% 10% 80%;
 }
 .featCard img {
   grid-column: 1/2;
@@ -681,8 +681,6 @@ footer p {
   }
   .featCard p {
     font-size: 15px;
-    padding-top: 30px;
-    margin-top: 5%;
   }
 
   #partners {
