@@ -376,6 +376,54 @@ footer p {
 #menuMobile-abt img {
   padding: 1rem 0 0 2rem;
 }
+
+#aboutMain {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Ellipse-black-lines.0946821b.png"), url("/Ellipse-color-pattern.7a54feae.png"), url("/elipse-B&W.6be8c489.png"), url("/elipse-B&W.6be8c489.png");
+  background-repeat: no-repeat;
+  background-size: 10%, auto, 15%, 9%;
+  background-position: 82% 0%, 17% 14%, 98% 13%, 2% 8%;
+}
+#aboutMain h1 {
+  font-family: sans-serif;
+  color: #ec5242;
+  line-height: 1;
+  text-align: center;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.title {
+  color: #ec5242;
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
+#abtSummary {
+  width: 90%;
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  padding: 1rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  font-size: 13px;
+  line-height: 144%;
+  font-family: sans-serif;
+}
+
+.contact {
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #272a31;
+  padding-bottom: 2rem;
+}
+.contact strong {
+  text-decoration: underline;
+}
 #partnersAbt {
   width: 100%;
   background-color: #272a31;
