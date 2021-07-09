@@ -317,3 +317,29 @@ nav {
   color: white;
   border: 1px dotted white;
 }
+
+#partners {
+  width: 100%;
+  background-color: #272a31;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#partners h2 {
+  font-size: 18px;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+#partContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding-bottom: 1rem;
+}
+#partContainer img {
+  width: 50%;
+  padding: 1rem;
+}
