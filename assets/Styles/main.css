@@ -1,0 +1,911 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  font-family: sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url('../fonts/Cocogoose_trial.woff');
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/Lato-Regular.woff');
+}
+
+/* Custom properties */
+
+:root {
+  --primary-red: #ec5242;
+  --primary-white: #d3d3d3;
+  --primary-black: #272a31;
+  --transparency: rgba(62, 66, 73, 0.6);
+  --primary-ff: cocogoose;
+  --secondary-ff: lato;
+  --box-shadow: 0 -1px 6px 2px rgba(0, 0, 0, 0.25);
+  --background: #f5f5f5;
+}
+
+/* Core Styles */
+
+#hambMenu {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#menuMobile {
+  background-image: url("../png/Header_mobile.png");
+  background-size: cover;
+  width: 100%;
+  height: 131px;
+  display: block;
+}
+
+.featCard img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+#menuMobile img {
+  padding: 1rem 0 0 2rem;
+}
+
+#menuDisplay {
+  background-color: var(--primary-black);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+#menuDisplay a {
+  color: var(--primary-white);
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 3rem 0 0 2rem;
+}
+
+#closeBtn {
+  float: right;
+  color: var(--primary-white);
+  padding-right: 1rem;
+  cursor: pointer;
+  font-family: var(--secondary-ff);
+  font-style: normal;
+}
+
+nav {
+  width: 100%;
+  display: none;
+}
+
+#socialBar {
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+#heroSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 4rem 1rem;
+  background-image:
+    url("../png/Ellipse-color-pattern.png"),
+    url("../png/deco-0-icon.png"),
+    url("../svg/x-gray-icon.svg"),
+    url("../png/deco-dollar-icon.png");
+  background-repeat: no-repeat;
+  background-size: 20%, 5%, auto, auto;
+  background-position: 98% 39%, 13% 37%, 16% 98%, 89% 91%;
+}
+
+#heroSection img {
+  padding-bottom: 1rem;
+}
+
+#heroSection h1 {
+  color: var(--primary-red);
+  font-size: 2rem;
+  line-height: 90%;
+  font-family: var(--primary-ff);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+#heroSection h3 {
+  color: var(--primary-red);
+  font-family: var(--secondary-ff);
+  font-weight: 300;
+}
+
+#heroSection h2 {
+  color: var(--primary-black);
+  font-family: var(--primary-ff);
+  font-weight: 800;
+}
+
+footer p {
+  align-self: center;
+  font-family: var(--secondary-ff);
+  font-size: 12px;
+  color: var(--primary-black);
+  font-weight: 300;
+}
+
+.featCard p {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 13px;
+}
+
+#heroSection p {
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-family: var(--secondary-ff);
+}
+
+#sumContainer {
+  align-self: center;
+  width: 98%;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--background);
+  border: 1px solid white;
+}
+
+#mainProgram {
+  background-image: url('../svg/mobile-background.svg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#mainProgram h2 {
+  color: var(--primary-white);
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.deco {
+  width: 27px;
+  border: 1px solid var(--primary-red);
+  margin-bottom: 2rem;
+}
+
+.deco-sub {
+  width: 27px;
+  border: 1px solid var(--primary-black);
+  margin-bottom: 2rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.sectionTitle {
+  padding: 2rem 0;
+}
+
+#actContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+#actContainer li {
+  margin: 0.5rem;
+  color: var(--primary-white);
+  font-family: var(--secondary-ff);
+  font-size: 12px;
+  background-color: var(--transparency);
+  display: grid;
+  grid-template-columns: 20% 25% 55%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  justify-items: center;
+}
+
+.featCard h4 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 18px;
+  color: var(--primary-black);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+
+#aboutLogo h4 {
+  text-align: center;
+  font-family: var(--secondary-ff);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+#actContainer li h4 {
+  font-size: 16px;
+  color: var(--primary-red);
+}
+
+#mainSBtn {
+  background: var(--primary-red);
+  color: var(--primary-white);
+  width: 80%;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border: none;
+}
+
+#featSpeakers {
+  background-color: #f5f2f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#featSpeakers h2 {
+  color: var(--primary-black);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#featContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featCard {
+  width: 90%;
+  padding: 1rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 10% 17% 73%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.featCard h5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 14px;
+  color: var(--primary-red);
+  font-weight: normal;
+}
+
+#showMore {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#showMore button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  width: 90%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 0.5px solid var(--primary-white);
+  cursor: pointer;
+}
+
+#showMore button:hover {
+  transition: all 0.5s ease-out;
+  background-color: var(--primary-red);
+  color: white;
+  border: 1px dotted white;
+}
+
+#partners {
+  width: 100%;
+  background-color: var(--primary-black);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#partners h2 {
+  font-size: 18px;
+  color: var(--primary-white);
+  text-align: center;
+}
+
+#partContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding-bottom: 1rem;
+}
+
+#partContainer img {
+  width: 50%;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--background);
+  padding: 2rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 40% 60%;
+}
+
+footer div {
+  align-self: center;
+}
+
+/* About Page */
+
+#menuMobile-abt {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-image: url("../png/Ellipse-color-lines.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 36% 57%;
+}
+
+#menuMobile-abt img {
+  padding: 1rem 0 0 2rem;
+}
+
+#aboutMain {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    url("../png/Ellipse-black-lines.png"),
+    url("../png/Ellipse-color-pattern.png"),
+    url("../png/elipse-B&W.png"),
+    url("../png/elipse-B&W.png");
+  background-repeat: no-repeat;
+  background-size: 10%, auto, 15%, 9%;
+  background-position: 82% 0%, 17% 14%, 98% 13%, 2% 8%;
+}
+
+#aboutMain h1 {
+  font-family: var(--primary-ff);
+  color: var(--primary-red);
+  line-height: 1;
+  text-align: center;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.title {
+  color: var(--primary-red);
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
+#abtSummary {
+  width: 90%;
+  background-color: white;
+  border: 2px solid var(--primary-white);
+  padding: 1rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  font-size: 13px;
+  line-height: 144%;
+  font-family: var(--secondary-ff);
+}
+
+.contact {
+  text-align: center;
+  font-size: 13px;
+  font-family: var(--secondary-ff);
+  color: var(--primary-black);
+  padding-bottom: 2rem;
+}
+
+.contact strong {
+  text-decoration: underline;
+}
+
+#aboutLogo {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+#aboutLogo p {
+  width: 80%;
+  font-family: var(--secondary-ff);
+  font-size: 12px;
+  color: var(--primary-black);
+  text-align: center;
+}
+
+#aboutLogo img {
+  border: 1px solid #cecfd1;
+  padding: 1rem 2rem;
+  width: 95%;
+  margin: 2rem 0;
+}
+
+#pastEvents {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-top: 1px solid #cecfd1;
+}
+
+#pastEvents h5 {
+  color: var(--primary-black);
+  text-align: center;
+  font-family: var(--secondary-ff);
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 1.5rem;
+}
+
+#pastEvents p {
+  width: 80%;
+  font-family: var(--secondary-ff);
+  font-size: 12px;
+  color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#pastEvents img {
+  margin: 0.5rem 0;
+}
+
+#pastEvents img:nth-child(even) {
+  margin-bottom: 2rem;
+}
+
+.past-event {
+  align-self: center;
+}
+
+.deskShow {
+  display: none;
+}
+
+#partnersAbt {
+  width: 100%;
+  background-color: var(--primary-black);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#partnersAbt h2 {
+  font-size: 18px;
+  color: var(--primary-white);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menuMobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    padding: 3rem 4rem 2rem 4rem;
+    box-shadow: 0 -1px 6px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  nav img {
+    width: 130px;
+    height: auto;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--primary-black);
+    margin: 0 1rem;
+  }
+
+  nav .logoNav {
+    width: 35%;
+  }
+
+  nav button {
+    width: 15%;
+    padding: 0.5rem 1rem;
+    border: 4px solid var(--primary-red);
+    background-color: var(--background);
+    margin: 0 1rem 1rem 1rem;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav button:hover {
+    background-color: var(--primary-red);
+    border: 2px solid white;
+    color: white;
+  }
+
+  #socialBar {
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #socialBar .social-icons {
+    width: 100%;
+    padding-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #partContainer img {
+    width: 20%;
+  }
+
+  #aboutLogo img {
+    width: 40%;
+    height: auto;
+    padding: 3rem 4rem;
+    margin-top: 2rem;
+  }
+
+  #pastEvents img {
+    margin: 0 1rem;
+  }
+
+  #socialBar .social-icons img {
+    margin: 0 1rem;
+    width: auto;
+    height: 25%;
+    cursor: pointer;
+  }
+
+  #socialBar .social-icons a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primary-white);
+  }
+
+  #heroSection {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 7rem;
+    background-image:
+      url("../png/Ellipse-color-pattern.png"),
+      url("../png/deco-0-icon.png"),
+      url("../png/deco-yen-icon.png"),
+      url("../png/deco-0-icon.png"),
+      url("../png/square-B&W.png"),
+      url("../png/deco-c-icon.png");
+    background-repeat: no-repeat;
+    background-size: 8%, 2%, auto, 2%, 6%, 3%;
+    background-position: 60% 70%, 13% 41%, 5% 98%, 95% 47%, 93% 72%, 75% 93%;
+  }
+
+  #backgroundDesk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    padding-top: 9rem;
+    background-image: url("../svg/desk-header.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -2%;
+  }
+
+  #backgroundDesk .hero-content {
+    width: 75%;
+    padding-left: 20%;
+  }
+
+  #backgroundDesk .hero-content h3 {
+    font-size: 45px;
+    align-self: flex-start;
+  }
+
+  #backgroundDesk .hero-content h2 {
+    align-self: flex-start;
+    font-size: 40px;
+  }
+
+  #sumContainer {
+    width: 70%;
+    border: 2px solid white;
+    font-size: 14px;
+  }
+
+  #actContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0 10rem 4rem 10rem;
+  }
+
+  #actContainer li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+
+  #featSpeakers {
+    padding: 2rem 4rem;
+  }
+
+  #featContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .featCard {
+    width: 40vw;
+  }
+
+  .featCard h4 {
+    font-size: 20px;
+  }
+
+  .featCard h5 {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
+  .featCard p {
+    font-size: 13px;
+  }
+
+  #partners {
+    padding: 2rem 5rem;
+  }
+
+  #partContainer {
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+
+  #partnersAbt {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer div {
+    width: 25%;
+    padding: 3rem 3rem 2rem 2rem;
+  }
+
+  #menuMobile-abt {
+    display: none;
+  }
+
+  #aboutMain {
+    padding-top: 7rem;
+    background-image:
+      url("../png/Ellipse-black-lines.png"),
+      url("../png/Ellipse-color-pattern.png"),
+      url("../png/elipse-B&W.png"),
+      url("../png/elipse-B&W.png"),
+      url("../png/Ellipse-color-lines.png");
+    background-size: 6%, auto, 9%, 7%, 4%;
+    background-position: 89% 3%, 20% 14%, 98% 16%, 2% 8%, 16% 2%;
+  }
+
+  #aboutMain h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    display: none;
+  }
+
+  #abtSummary {
+    width: 55%;
+    margin-bottom: 4rem;
+    padding: 2rem 4rem;
+  }
+
+  .contact {
+    width: 50%;
+    font-size: 16px;
+    padding-bottom: 8rem;
+  }
+
+  #aboutLogo {
+    width: 98%;
+    padding-top: 7rem;
+  }
+
+  #aboutLogo h4 {
+    text-align: center;
+    font-family: var(--secondary-ff);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .footerAbt p {
+    color: var(--primary-white);
+  }
+
+  #pastEvents p {
+    font-size: 14px;
+    padding-bottom: 5rem;
+  }
+
+  .footerAbt {
+    width: 100%;
+    background-color: var(--primary-black);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #aboutLogo p {
+    width: 50%;
+  }
+
+  #pastEvents {
+    padding-bottom: 7rem;
+  }
+
+  #pastEvents h5 {
+    font-size: 30px;
+  }
+
+  #pastEvents div {
+    display: flex;
+  }
+
+  #pastEvents img:nth-child(even) {
+    margin-bottom: 0;
+  }
+
+  .deskShow {
+    display: block;
+  }
+
+  .deskNone {
+    display: none;
+  }
+}
