@@ -113,7 +113,7 @@ select {
 }
 
 #menuMobile {
-  background-image: url("./assets/png/Header_mobile.png");
+  background-image: url("../png/Header_mobile.png");
   background-size: cover;
   width: 100%;
   height: 131px;
@@ -175,10 +175,10 @@ main {
   justify-content: center;
   padding: 1rem 1rem 4rem 1rem;
   background-image:
-    url("./assets/png/Ellipse-color-pattern.png"),
-    url("./assets/png/deco-0-icon.png"),
-    url("./assets/svg/x-gray-icon.svg"),
-    url("./assets/png/deco-dollar-icon.png");
+    url("/assets/png/Ellipse-color-pattern.png"),
+    url("/assets/png/deco-0-icon.png"),
+    url("/assets/svg/x-gray-icon.svg"),
+    url("/assets/png/deco-dollar-icon.png");
   background-repeat: no-repeat;
   background-size: 20%, 5%, auto, auto;
   background-position: 98% 39%, 13% 37%, 16% 98%, 89% 91%;
@@ -241,7 +241,7 @@ footer p {
 }
 
 #mainProgram {
-  background-image: url('./assets/svg/mobile-background.svg');
+  background-image: url('/assets/svg/mobile-background.svg');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,7 +442,7 @@ footer div {
   display: block;
   width: 100%;
   height: 100px;
-  background-image: url("./assets/png/Ellipse-color-lines.png");
+  background-image: url("/assets/png/Ellipse-color-lines.png");
   background-repeat: no-repeat;
   background-size: 10%;
   background-position: 36% 57%;
@@ -459,10 +459,10 @@ footer div {
   justify-content: center;
   align-items: center;
   background-image:
-    url("./assets/png/Ellipse-black-lines.png"),
-    url(".assets/png/Ellipse-color-pattern.png"),
-    url("./assets/png/elipse-B&W.png"),
-    url("./assets/png/elipse-B&W.png");
+    url("/assets/png/Ellipse-black-lines.png"),
+    url("/assets/png/Ellipse-color-pattern.png"),
+    url("/assets/png/elipse-B&W.png"),
+    url("/assets/png/elipse-B&W.png");
   background-repeat: no-repeat;
   background-size: 10%, auto, 15%, 9%;
   background-position: 82% 0%, 17% 14%, 98% 13%, 2% 8%;
@@ -697,15 +697,15 @@ footer div {
     align-items: center;
     padding-bottom: 7rem;
     background-image:
-      url("./assets/png/Ellipse-color-pattern.png"),
-      url("./assets/png/deco-0-icon.png"),
-      url("./assets/png/deco-yen-icon.png"),
-      url("./assets/png/deco-0-icon.png"),
-      url("./assets/png/square-B&W.png"),
-      url("./assets/png/deco-c-icon.png");
+      url("/assets/png/Ellipse-color-pattern.png"),
+      url("/assets/png/deco-0-icon.png"),
+      url("/assets/png/deco-yen-icon.png"),
+      url("/assets/png/deco-0-icon.png"),
+      url("/assets/png/square-B&W.png"),
+      url("/assets/png/deco-c-icon.png");
     background-repeat: no-repeat;
     background-size: 9%, 2%, auto, 2%, 6%, 3%;
-    background-position: 60% 70%, 13% 41%, 5% 98%, 99% 47%, 93% 72%, 75% 93%;
+    background-position: 60% 70%, 13% 41%, 5% 98%, 95% 47%, 93% 72%, 75% 93%;
   }
 
   #backgroundDesk {
@@ -715,7 +715,7 @@ footer div {
     width: 100vw;
     height: 100%;
     padding-top: 9rem;
-    background-image: url("./assets/svg/desk-header.svg");
+    background-image: url("/assets/svg/desk-header.svg");
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -2%;
@@ -818,11 +818,11 @@ footer div {
   #aboutMain {
     padding-top: 7rem;
     background-image:
-      url("./assets/png/Ellipse-black-lines.png"),
-      url("./assets/png/Ellipse-color-pattern.png"),
-      url("./assets/png/elipse-B&W.png"),
-      url("./assets/png/elipse-B&W.png"),
-      url("./assets/png/Ellipse-color-lines.png");
+      url("/assets/png/Ellipse-black-lines.png"),
+      url("/assets/png/Ellipse-color-pattern.png"),
+      url("/assets/png/elipse-B&W.png"),
+      url("/assets/png/elipse-B&W.png"),
+      url("/assets/png/Ellipse-color-lines.png");
     background-size: 6%, auto, 9%, 7%, 4%;
     background-position: 89% 3%, 20% 14%, 98% 16%, 2% 8%, 16% 2%;
   }
