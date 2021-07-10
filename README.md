@@ -45,8 +45,13 @@ Learning Objectives:
 
 1. Clone the repo
   - git clone https://github.com/alef-garrido/M1Capstone.git
-2. Install NPM packages
+  
+2. Install NPM packages :
+  
+```
   npm install
+```
+
 
 ## Author
 
