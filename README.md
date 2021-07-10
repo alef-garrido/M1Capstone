@@ -20,7 +20,7 @@ Learning Objectives:
  - Use objects to store and access data.
  - Communicate technical concepts to other technical people.
 
-![screenshot](./app_screenshot.png)
+![screenshot](/assets/png/ScreenshotDesktop-1.png)
 
 ## Built With
 
