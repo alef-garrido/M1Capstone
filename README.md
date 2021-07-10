@@ -20,7 +20,11 @@ Learning Objectives:
  - Use objects to store and access data.
  - Communicate technical concepts to other technical people.
 
+## Preview
+![screenshot](/assets/png/ScreenshotDesktop-2.png)
 ![screenshot](/assets/png/ScreenshotDesktop-1.png)
+![screenshot](/assets/png/ScreenshotMobile-2.png)
+![screenshot](/assets/png/ScreenshotMobile-1.png)
 
 ## Built With
 
@@ -36,6 +40,13 @@ Learning Objectives:
 ## Documentation Video
 
 [Video Link] (https://www.loom.com/share/80f62479cd2f4dcca2df02ef186db493)
+
+## Getting Started 
+
+1. Clone the repo
+  - git clone https://github.com/alef-garrido/M1Capstone.git
+2. Install NPM packages
+  npm install
 
 ## Author
 
